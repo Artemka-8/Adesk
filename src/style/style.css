@@ -1,0 +1,39 @@
+html{
+  box-sizing: border-box;
+}
+
+*, *::after, *::before{
+  box-sizing: inherit;
+}
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+  padding: 0;
+}
+img{
+  display: block;
+
+  max-width: 100%;
+
+  border: none;
+}
+ul, ul li {
+  margin: 0;
+  padding: 0;
+
+	list-style: none;
+}
+a, a:link, a:visited  {
+  text-decoration: none;
+}
+a:hover  {
+  text-decoration: none;
+}
+body{
+  margin: 0; 
+
+  color: var(--grey-color);
+  background-color: #fff;
+
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
