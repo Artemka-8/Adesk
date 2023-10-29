@@ -1,3 +1,5 @@
+
+
 html{
   box-sizing: border-box;
 }
@@ -31,9 +33,396 @@ a:hover  {
 body{
   margin: 0; 
 
-  color: var(--grey-color);
-  background-color: #fff;
+  color: var(--dark-blue);
+  background-color: linear-gradient(0deg, #FFF 0%, #FFF 100%), #FBFBFB;
 
-  font-family: 'Lato', sans-serif;
+  font-family: Graphik;
+  font-size: 22px;
   font-weight: 400;
 }
+
+:root{
+  --black: #2C3038; /*var(--black, #2C3038); */
+  --dark-blue: #051534; /*var(--dark-blue, #051534); */
+  --light-blue:#0F8FF9; /*var(--light-blue, #0F8FF9); */
+  --green:#00C064; /*var(--green, #00C064); */
+  --white:#fff; /*var(--white, #fff); */
+  --background:#FBFBFB; /*var(--background, #FBFBFB); */
+}
+.button{
+  display: inline-flex;
+  align-items: center;
+
+  padding: 12px 20px;
+
+  border: 1px solid rgba(5, 21, 52, 0.30);
+  border-radius: 4px;
+
+  font-family: Graphik;
+
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.h2 { 
+  letter-spacing: -0.225px;
+
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 110%;
+}
+
+.blok {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  max-width: 500px; 
+
+  font-size: 22px;
+  line-height: 150%; 
+}
+
+.paragraph{
+  text-align: center;
+
+  font-size: 22px;
+  line-height: 150%; 
+}
+
+.standart-module-flex{
+  display: flex;
+  gap: 80px;
+}
+
+.standard-container{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Стили шапки страницы */
+.menu {
+  padding: 17px 30px;
+
+  color: var(--black, #2C3038);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(15px);
+}
+.menu__flex {
+  display: flex;
+  align-items: center;
+  flex-direction: row
+}
+.menu-logo {
+  margin-right: 102px;
+}
+.menu__list {
+  display: flex;
+  gap: 30px;
+
+  margin: 0 auto 0 0;
+
+  font-size: 18px;
+  line-height: 110%; 
+}
+
+.button-conteiner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.btm-img{
+  margin-right: 8px;
+
+  border-radius: 50%;
+}
+.demo {
+  padding: 10px 16px;
+
+  border: none;
+  background-color: var(--white, #fff);
+}
+.in {
+  background-color: var(--white, #fff);
+}
+.registration {
+  color: var(--white, #fff);
+  background-color: var(--light-blue, #0F8FF9);
+}
+
+/* Стили блока "Бланс" */
+
+.balance {
+  margin-bottom: 228px;
+  padding-top: 150px;
+
+  text-align: center;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+  background-color: var(--background, #FBFBFB);;
+}
+.balance__conteiner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.h1 {
+  margin-bottom: 20px; 
+
+  letter-spacing: -0.65px;
+
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 110%;
+}
+.balance__paragraph {
+  max-width: 830px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  line-height: 150%; 
+}
+
+.button__balance {
+  margin-bottom: 70px;
+  padding: 18px 28px;
+
+  color: var(--white, #fff);
+  background: var(--green, #00C064);
+
+  font-family: Graphik;
+  font-size: 24px;
+  line-height: 100%; 
+}
+
+
+/* Стили блока "Баланс — главный отчет собственника" */
+
+
+.balance-determination__flex {
+  display: flex;
+  gap: 40px;
+
+  max-width: 1140px;
+  margin: 0 auto 200px
+}
+.balance-determination__img {
+  margin-top: -44px;
+}
+.balance-determination__description {
+  min-width: 900px;
+
+  font-size: 32px;
+  line-height: 150%; 
+}
+.balance-determination__description strong{
+  font-weight: 600;
+}
+
+/* Стили блока "Получите полную картину финансов компании" */
+.financial-vision {
+  margin-bottom: 200px;
+}
+.financial-vision__h2{
+  padding-top: 92px;
+}
+
+/* Стили блока "Оперативно оценивайте здоровье бизнеса" */
+.business-health{
+  margin-bottom: 200px;
+}
+.business-health__flex{
+  flex-direction: row-reverse;
+}
+.business-health__h2{
+  padding-top: 60px;
+}
+
+/* Стили блока "Построить отчет поможет мастер сборки баланса 🧙‍♂️" */
+.blok-video {
+  margin-bottom: 206px;
+}
+.blok-video__h2 {
+  max-width: 750px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  text-align: center;
+
+}
+.blok-video__paragraph {
+  max-width: 946px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  text-align: center;
+}
+.conteiner-for-video {
+  max-width: 950px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+
+  border-radius: 15px;
+  background-color: rgb(244,244,244);
+}
+.blok-video__video{
+  max-width: 946px;
+  max-height: 720px;
+}
+
+/* Стили блока "Соберите один раз, а дальше — мы сами" */
+.assembly {
+  margin-bottom: 250px;
+}
+.assembly__h2 {
+  padding-top: 85px;
+}
+
+/* Стили блока "Узнайте, как ваш бизнес распоряжается ресурсами" */
+.offer {
+  margin-bottom: 250px;
+}
+
+.offer__h2 {
+  max-width: 946px;
+  margin: 0 auto 20px;
+
+  text-align: center;
+
+  font-size: 55px;
+}
+.offer__paragraph {
+  max-width: 752px;
+  margin: 0 auto 30px;
+}
+
+.offer__button {
+  margin: 0 auto;
+  padding: 18px 28px;
+
+  color: var(--white, #fff);
+  background-color: var(--green, #00C064);
+
+  font-size: 24px;
+  line-height: 100%; 
+}
+
+.button-conteiner{
+  text-align: center;
+}
+
+/* Стили подвала сайта */
+.footer {
+  padding-top: 60px;
+
+  color: var(--white, #fff);
+  background-color: var(--dark-blue, #051534);
+}
+
+.footer__logo {
+  display: flex;
+  gap: 15px;
+
+  padding-bottom: 60px;
+}
+.footer__logo-paragraph {
+  width: 190px;
+
+  line-height: 120%; 
+}
+.footer__logo-paragraph b{
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.h3{
+  font-size: 16px;
+  font-weight: 500;
+}
+.h3-question{
+  padding-top: 9px;
+}
+.h3-offers{
+  padding-top: 12px;
+}
+
+.footer-navigation{
+  display: flex;
+
+  padding-bottom: 82px;
+
+  font-size: 16px;
+  gap: 24px;
+}
+
+.footer-navigation__item{
+  width: 270px;
+}
+
+.academic-cap{
+  display: inline-block;
+
+  margin-bottom: -4px;
+  padding-left: 4px;
+}
+
+.footer-navigation a{
+  text-decoration: none;
+
+  color: #8394B5;;
+}
+
+.footer-navigation li{
+  margin-bottom: 15px;
+
+  line-height: 120%
+}
+.footer-navigation li:last-child{
+  margin-bottom: 0px;
+}
+
+.services {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  padding: 10px 0 20px;
+}
+
+.services__flex{
+  display: flex;
+  gap: 20px;
+}
+.money-transfers {
+  align-items: center
+}
+
+.app-stores__button {
+  padding: 12px;
+
+  color: var(--white);
+  border: 2px solid rgba(255, 255, 255, 0.20);
+  border-color: #FFF;
+  border-radius: 8px;
+  background-color: var(--dark-blue, #051534);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%; 
+}
+
+.top-line{
+  padding: 22px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.social-network {
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.annotation {
+  gap: 30px;
+}
+
+
