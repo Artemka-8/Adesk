@@ -820,16 +820,18 @@ a:hover{
 
   font-size: 18px
 }
-  .balance__conteiner{
-    padding: 0 15px;
+.balance__conteiner{
+  padding: 0 15px;
   }
-  .button-conteiner {
-    display: none;
+.button-conteiner {
+  display: none;
 }
 .button__balance {
+  align-items: center;
+
   margin-bottom: 33px;
   padding: 12px 20px;
-
+  
   font-size: 18px;
 }
 .h1 {
